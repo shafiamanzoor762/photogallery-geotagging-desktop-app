@@ -54,14 +54,14 @@ Press F5 to run in Debug mode.
 Or run the compiled .exe from the bin/Debug or bin/Release folder.
 
 ### 📂 Project Structure
-plaintext
-Copy code
+```
 PhotoGallery-Desktop/
 ├── Forms/              # Windows Forms (UI)
 ├── Models/             # Data models (Photo, Event, Location)
 ├── Services/           # SQLite service, image metadata utilities
 ├── Helpers/            # Common helper classes
 └── Program.cs          # Application entry point
+```
 ---
 ### 💡 Features
 #### 📂 Photo Importing — Add and manage photos.
