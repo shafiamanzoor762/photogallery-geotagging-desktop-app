@@ -61,44 +61,40 @@ PhotoGallery-Desktop/
 ```
 ---
 ### 💡 Features
-#### 📂 Photo Importing — Add and manage photos.
-#### 🔍 Smart Search — Search by person, event, location, or date.
-#### 🧭 Geotagging Support — Reads and uses photo GPS metadata.
-#### 🗃 SQLite Database — Fast and lightweight local storage.
-#### 🖼 Windows Forms UI — Simple, clean desktop interface.
+- 📂 Photo Importing — Add and manage photos.
+- 🔍 Smart Search — Search by person, event, location, or date.
+- 🧭 Geotagging Support — Reads and uses photo GPS metadata.
+- 🗃 SQLite Database — Fast and lightweight local storage.
+- 🖼 Windows Forms UI — Simple, clean desktop interface.
 ---
 ### 🛠 Technologies Used
-#### Technology	Description
-#### .NET WinForms	UI framework for Windows desktop apps
-#### C#	Programming language
-#### SQLite	Local database engine
-#### System.Drawing	Image rendering & metadata handling
-#### EXIF libs	Extract image metadata (date, GPS, etc.)
+- Technology	Description
+- .NET WinForms	UI framework for Windows desktop apps
+- C#	Programming language
+- SQLite	Local database engine
+- System.Drawing	Image rendering & metadata handling
+- EXIF libs	Extract image metadata (date, GPS, etc.)
 ---
 ### 🐛 Troubleshooting
-#### ❗ App won’t run?
-
-  #### Install .NET Desktop Runtime 6.0+.
-
-  #### Rebuild the solution in Visual Studio.
+- ❗ App won’t run?
+  - Install .NET Desktop Runtime 6.0+.
+  - Rebuild the solution in Visual Studio.
 
 ### 📂 Database errors?
-
-#### Ensure SQLite .db file is accessible and not locked.
+  Ensure SQLite .db file is accessible and not locked.
 
 ### 🖼 Photos not loading?
-
-#### Check file permissions and supported formats (JPEG, PNG, etc.).
+  Check file permissions and supported formats (JPEG, PNG, etc.).
 ---
 ### 📘 Learn More
-#### .NET Windows Forms
-#### SQLite Documentation
-#### C# Programming Guide
+- .NET Windows Forms
+- SQLite Documentation
+- C# Programming Guide
 ---
 ### 🤝 Contributing
-#### Pull requests are welcome!
-#### For major changes, please open an issue first to discuss what you’d like to add.
-#### Follow best practices for C# project structure and naming.
+- Pull requests are welcome!
+- For major changes, please open an issue first to discuss what you’d like to add.
+- Follow best practices for C# project structure and naming.
 ---
 ### 📄 License
-#### This project is licensed under the MIT License — see the LICENSE file for details.
+  This project is licensed under the MIT License — see the LICENSE file for details.
