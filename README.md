@@ -43,14 +43,11 @@ cd photogallery-geotagging-desktop-app
 ```
 ### Step 2: Open in Visual Studio
 Open PhotoGallery.sln in Visual Studio.
-
 Restore NuGet packages (SQLite etc.).
-
 Build the solution (Ctrl + Shift + B).
 
 ### Step 3: Run the Application
 Press F5 to run in Debug mode.
-
 Or run the compiled .exe from the bin/Debug or bin/Release folder.
 
 ### 📂 Project Structure
