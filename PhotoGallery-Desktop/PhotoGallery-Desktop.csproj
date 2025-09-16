@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C90D10A-17B3-4F49-B9EB-87E2B8015A69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PhotoGallery_Desktop</RootNamespace>
+    <AssemblyName>PhotoGallery-Desktop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3065.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3065.39\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.3065.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3065.39\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3065.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3065.39\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBulkDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBulkDataForm.Designer.cs">
+      <DependentUpon>AddBulkDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEvent.Designer.cs">
+      <DependentUpon>AddNewEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details_Undo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details_Undo.Designer.cs">
+      <DependentUpon>Details_Undo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDDB.Designer.cs">
+      <DependentUpon>EDDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditImage.Designer.cs">
+      <DependentUpon>EditImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPersonMetadata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPersonMetadata.Designer.cs">
+      <DependentUpon>EditPersonMetadata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstScreen.Designer.cs">
+      <DependentUpon>FirstScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetPersonsGroupFromImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetPersonsGroupFromImage.Designer.cs">
+      <DependentUpon>GetPersonsGroupFromImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageGallery.Designer.cs">
+      <DependentUpon>ImageGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mergefaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mergefaces.Designer.cs">
+      <DependentUpon>Mergefaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchImage.Designer.cs">
+      <DependentUpon>SearchImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondScreen.Designer.cs">
+      <DependentUpon>SecondScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectPersonForm.Designer.cs">
+      <DependentUpon>SelectPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPersonMetadata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPersonMetadata.Designer.cs">
+      <DependentUpon>ShowPersonMetadata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTraningImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowTraningImages.Designer.cs">
+      <DependentUpon>ShowTraningImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncImages.Designer.cs">
+      <DependentUpon>SyncImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taskcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taskcs.Designer.cs">
+      <DependentUpon>Taskcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Undo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Undo.Designer.cs">
+      <DependentUpon>Undo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBulkDataForm.resx">
+      <DependentUpon>AddBulkDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewEvent.resx">
+      <DependentUpon>AddNewEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details_Undo.resx">
+      <DependentUpon>Details_Undo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDDB.resx">
+      <DependentUpon>EDDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditImage.resx">
+      <DependentUpon>EditImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPersonMetadata.resx">
+      <DependentUpon>EditPersonMetadata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstScreen.resx">
+      <DependentUpon>FirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetPersonsGroupFromImage.resx">
+      <DependentUpon>GetPersonsGroupFromImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageGallery.resx">
+      <DependentUpon>ImageGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mergefaces.resx">
+      <DependentUpon>Mergefaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchImage.resx">
+      <DependentUpon>SearchImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondScreen.resx">
+      <DependentUpon>SecondScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectPersonForm.resx">
+      <DependentUpon>SelectPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPersonMetadata.resx">
+      <DependentUpon>ShowPersonMetadata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowTraningImages.resx">
+      <DependentUpon>ShowTraningImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncImages.resx">
+      <DependentUpon>SyncImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taskcs.resx">
+      <DependentUpon>Taskcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Undo.resx">
+      <DependentUpon>Undo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{46a6b52a-ae3c-41fa-861b-4ae732eaa0da}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer2\DataAccessLayer2.csproj">
+      <Project>{9AE4C0A2-E6CF-4C1B-93C0-16D5DE510E4E}</Project>
+      <Name>DataAccessLayer2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vectors\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulkEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cluster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\vectors\setting.png" />
+    <None Include="Resources\edit %281%29.png" />
+    <None Include="Resources\undo %281%29.png" />
+    <None Include="Resources\move-up %281%29.png" />
+    <None Include="Resources\checkmark_imresizer.jpg" />
+    <None Include="Resources\checkmark %281%29.png" />
+    <None Include="Resources\cross %281%29.png" />
+    <None Include="Resources\recycle-bin %282%29.png" />
+    <None Include="Resources\recycle-bin %281%29.png" />
+    <None Include="Resources\share %282%29.png" />
+    <None Include="Resources\share %281%29.png" />
+    <None Include="Resources\ai-gallery.png" />
+    <None Include="Resources\ai_gallery %284%29.png" />
+    <None Include="Resources\ai_gallery11.png" />
+    <None Include="Resources\ai_gallery1.png" />
+    <None Include="Resources\image_folder.png" />
+    <None Include="Resources\question_mark.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\Vector %283%29.png" />
+    <None Include="Resources\Folder copy.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
