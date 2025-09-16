@@ -80,12 +80,13 @@ PhotoGallery-Desktop/
   - Install .NET Desktop Runtime 6.0+.
   - Rebuild the solution in Visual Studio.
 
-### 📂 Database errors?
-  Ensure SQLite .db file is accessible and not locked.
+- 📂 Database errors?
+  - Ensure SQLite .db file is accessible and not locked.
 
-### 🖼 Photos not loading?
-  Check file permissions and supported formats (JPEG, PNG, etc.).
+- 🖼 Photos not loading?
+  - Check file permissions and supported formats (JPEG, PNG, etc.).
 ---
+
 ### 📘 Learn More
 - .NET Windows Forms
 - SQLite Documentation
